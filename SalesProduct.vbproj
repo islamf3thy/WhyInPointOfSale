@@ -1,0 +1,439 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{93E9235D-D7C4-49BF-B27C-ECCD597E6187}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SalesProduct.My.MyApplication</StartupObject>
+    <RootNamespace>SalesProduct</RootNamespace>
+    <AssemblyName>SalesProduct</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SalesProduct.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SalesProduct.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Computer.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v16.1.Core, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v16.1.Core, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="IrisSkin4">
+      <HintPath>G:\SalesSystem\SalesSystem\bin\Debug\IrisSkin4.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_\BarCode_\FrmDamagedItemsBarcode.Designer.vb">
+      <DependentUpon>FrmDamagedItemsBarcode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_\BarCode_\FrmDamagedItemsBarcode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_\BarCode_\FrmSalesInvoiceBarCode.Designer.vb">
+      <DependentUpon>FrmSalesInvoiceBarCode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_\BarCode_\FrmSalesInvoiceBarCode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_\FrmCustomersTrans.Designer.vb">
+      <DependentUpon>FrmCustomersTrans.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_\FrmCustomersTrans.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_\FrmFinancialSupport.Designer.vb">
+      <DependentUpon>FrmFinancialSupport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_\FrmFinancialSupport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_\FrmPOS.Designer.vb">
+      <DependentUpon>FrmPOS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_\FrmPOS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_\FrmReturnBill.Designer.vb">
+      <DependentUpon>FrmReturnBill.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_\FrmReturnBill.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_\Search\SearchPOSInvoice.Designer.vb">
+      <DependentUpon>SearchPOSInvoice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_\Search\SearchPOSInvoice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_\FrmDamagedItems.Designer.vb">
+      <DependentUpon>FrmDamagedItems.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_\FrmDamagedItems.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_\FrmReceiptOfItems.Designer.vb">
+      <DependentUpon>FrmReceiptOfItems.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_\FrmReceiptOfItems.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_\FrmCategorizations.Designer.vb">
+      <DependentUpon>FrmCategorizations.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_\FrmCategorizations.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_\frmCountries.Designer.vb">
+      <DependentUpon>frmCountries.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_\frmCountries.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_\FrmCustomers.Designer.vb">
+      <DependentUpon>FrmCustomers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_\FrmCustomers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_\FrmItems.Designer.vb">
+      <DependentUpon>FrmItems.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_\FrmItems.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_\BarCode_\FrmReceiptOfItemsBarCode.Designer.vb">
+      <DependentUpon>FrmReceiptOfItemsBarCode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_\BarCode_\FrmReceiptOfItemsBarCode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_\FrmReceiptVoucher.Designer.vb">
+      <DependentUpon>FrmReceiptVoucher.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_\FrmReceiptVoucher.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_\FrmSalesInvoice.Designer.vb">
+      <DependentUpon>FrmSalesInvoice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_\FrmSalesInvoice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_\FrmSuppliers.Designer.vb">
+      <DependentUpon>FrmSuppliers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_\FrmSuppliers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_\FrmSupplierTrans.Designer.vb">
+      <DependentUpon>FrmSupplierTrans.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_\FrmSupplierTrans.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_\Search\FrmUnitPrice.Designer.vb">
+      <DependentUpon>FrmUnitPrice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_\Search\FrmUnitPrice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_\Search\SearchUnit_Price.Designer.vb">
+      <DependentUpon>SearchUnit_Price.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_\Search\SearchUnit_Price.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_\Sys_\BackUpAndRestore.Designer.vb">
+      <DependentUpon>BackUpAndRestore.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_\Sys_\BackUpAndRestore.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_\Sys_\CompanyNameSYS.Designer.vb">
+      <DependentUpon>CompanyNameSYS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_\Sys_\CompanyNameSYS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_\Sys_\ConnectionMode.Designer.vb">
+      <DependentUpon>ConnectionMode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_\Sys_\ConnectionMode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_\Sys_\FrmPermissions.Designer.vb">
+      <DependentUpon>FrmPermissions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_\Sys_\FrmPermissions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_\Sys_\Loginsystem.Designer.vb">
+      <DependentUpon>Loginsystem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_\Sys_\Loginsystem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_\Sys_\splashscreen.Designer.vb">
+      <DependentUpon>splashscreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_\Sys_\splashscreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_\Sys_\UpdateSys.Designer.vb">
+      <DependentUpon>UpdateSys.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_\Sys_\UpdateSys.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MOD_\ArabicTxt.vb" />
+    <Compile Include="MOD_\BarCod_OcX.vb" />
+    <Compile Include="MOD_\Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SplashScreen1.Designer.vb">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen2.Designer.vb">
+      <DependentUpon>SplashScreen2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_\BarCode_\FrmDamagedItemsBarcode.resx">
+      <DependentUpon>FrmDamagedItemsBarcode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_\BarCode_\FrmSalesInvoiceBarCode.resx">
+      <DependentUpon>FrmSalesInvoiceBarCode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_\FrmCustomersTrans.resx">
+      <DependentUpon>FrmCustomersTrans.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_\FrmFinancialSupport.resx">
+      <DependentUpon>FrmFinancialSupport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_\FrmPOS.resx">
+      <DependentUpon>FrmPOS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_\FrmReturnBill.resx">
+      <DependentUpon>FrmReturnBill.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_\Search\SearchPOSInvoice.resx">
+      <DependentUpon>SearchPOSInvoice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_\FrmDamagedItems.resx">
+      <DependentUpon>FrmDamagedItems.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_\FrmReceiptOfItems.resx">
+      <DependentUpon>FrmReceiptOfItems.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_\FrmCategorizations.resx">
+      <DependentUpon>FrmCategorizations.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_\frmCountries.resx">
+      <DependentUpon>frmCountries.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_\FrmCustomers.resx">
+      <DependentUpon>FrmCustomers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_\FrmItems.resx">
+      <DependentUpon>FrmItems.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_\BarCode_\FrmReceiptOfItemsBarCode.resx">
+      <DependentUpon>FrmReceiptOfItemsBarCode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_\FrmReceiptVoucher.resx">
+      <DependentUpon>FrmReceiptVoucher.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_\FrmSalesInvoice.resx">
+      <DependentUpon>FrmSalesInvoice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_\FrmSuppliers.resx">
+      <DependentUpon>FrmSuppliers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_\FrmSupplierTrans.resx">
+      <DependentUpon>FrmSupplierTrans.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_\Search\FrmUnitPrice.resx">
+      <DependentUpon>FrmUnitPrice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_\Search\SearchUnit_Price.resx">
+      <DependentUpon>SearchUnit_Price.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_\Sys_\BackUpAndRestore.resx">
+      <DependentUpon>BackUpAndRestore.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_\Sys_\CompanyNameSYS.resx">
+      <DependentUpon>CompanyNameSYS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_\Sys_\ConnectionMode.resx">
+      <DependentUpon>ConnectionMode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_\Sys_\FrmPermissions.resx">
+      <DependentUpon>FrmPermissions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_\Sys_\Loginsystem.resx">
+      <DependentUpon>Loginsystem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_\Sys_\splashscreen.resx">
+      <DependentUpon>splashscreen.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_\Sys_\UpdateSys.resx">
+      <DependentUpon>UpdateSys.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen2.resx">
+      <DependentUpon>SplashScreen2.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="REP_\" />
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Computer.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
